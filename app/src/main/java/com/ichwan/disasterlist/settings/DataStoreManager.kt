@@ -25,6 +25,14 @@ class SetDataStore(context: Context) {
 
     companion object {
         val darkModeKey = booleanPreferencesKey("DARK_MODE")
+
+        private var instance: SetDataStore? = null
+
+        fun getInstance(context: Context): SetDataStore {
+            return instance ?: synchronized(this) {
+                instance ?: SetDataStore(context).also { instance = it }
+            }
+        }
     }
 
     //setTheme working as async, because edit datastore need outside resource

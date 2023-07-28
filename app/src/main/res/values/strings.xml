@@ -49,4 +49,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="lihat_daftar_bencana">Lihat Daftar Bencana</string>
+    <string name="daftar_bencana">Daftar Bencana</string>
+    <string name="pengaturan">Pengaturan</string>
 </resources>

@@ -19,11 +19,6 @@
         android:theme="@style/Theme.DisasterList"
         tools:targetApi="31">
         <activity
-            android:name=".settings.SettingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_setting"
-            android:theme="@style/Theme.DisasterList" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

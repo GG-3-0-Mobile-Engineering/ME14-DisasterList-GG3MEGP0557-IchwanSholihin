@@ -4,18 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.ichwan.disasterlist.databinding.FragmentModalBottomSheetBinding
+import com.ichwan.disasterlist.R
+import com.ichwan.disasterlist.databinding.FragmentDisasterBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DisasterFragment : BottomSheetDialogFragment() {
+class DisasterFragment : Fragment() {
 
-    private lateinit var binding: FragmentModalBottomSheetBinding
+    private lateinit var binding: FragmentDisasterBinding
     private lateinit var adapter: DisasterAdapter
     private var dataList: ArrayList<Geometries> = ArrayList()
 
@@ -23,11 +25,18 @@ class DisasterFragment : BottomSheetDialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentModalBottomSheetBinding.inflate(inflater, container, false)
+        binding = FragmentDisasterBinding.inflate(inflater, container, false)
+
+        binding.btnBack.setOnClickListener {
+            Navigation.findNavController(requireView()).navigate(R.id.action_disasterFragment_to_mapsFragment)
+        }
 
         adapter = DisasterAdapter(requireContext(), dataList)
-        binding.rvDisaster.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-        binding.rvDisaster.adapter = adapter
+
+        binding.apply {
+            rvDisaster.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            rvDisaster.adapter = adapter
+        }
 
         runBlocking {
             binding.pbDisaster.visibility = View.VISIBLE

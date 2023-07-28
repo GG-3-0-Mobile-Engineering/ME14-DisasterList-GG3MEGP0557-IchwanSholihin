@@ -1,87 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <org.osmdroid.views.MapView
-        android:id="@+id/mapView"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/darker_gray" />
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinat_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
-
-        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
-            android:id="@+id/handleSheet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="8dp" />
-
-        <FrameLayout
-            android:id="@+id/bottom_sheet"
-            style="@style/ModalBottomSheet"
-            android:layout_width="match_parent"
-            android:layout_gravity="bottom"
-            android:layout_height="120dp" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_filterable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/search_bar"
-        android:orientation="horizontal"
-        tools:listitem="@layout/item_filterable" />
-
-    <FrameLayout
-        android:id="@+id/set_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="8dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="4dp">
-
-            <EditText
-                android:id="@+id/search_loc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toStartOf="@id/btn_set"
-                android:background="@android:color/transparent"
-                android:fontFamily="@font/poppins_medium"
-                android:hint="@string/cari_lokasi"
-                android:padding="8dp" />
-
-            <ImageButton
-                android:id="@+id/btn_set"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/bg_shape"
-                android:padding="4dp"
-                android:src="@drawable/ic_settings" />
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

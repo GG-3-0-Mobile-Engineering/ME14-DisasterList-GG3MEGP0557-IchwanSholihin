@@ -1,10 +1,11 @@
-package com.ichwan.disasterlist.filterables
+package com.ichwan.disasterlist.presentation.ui.disaster
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.ichwan.disasterlist.R
+import com.ichwan.disasterlist.data.FilterableItem
 import com.ichwan.disasterlist.databinding.ItemFilterableBinding
 
 class FilterAdapter(var filter: ArrayList<FilterableItem>) :

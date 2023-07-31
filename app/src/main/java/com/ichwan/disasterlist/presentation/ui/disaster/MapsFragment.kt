@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.filterables
+package com.ichwan.disasterlist.presentation.ui.disaster
 
 import android.content.Context
 import android.os.Bundle
@@ -6,13 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ichwan.disasterlist.R
+import com.ichwan.disasterlist.data.FilterableItem
 import com.ichwan.disasterlist.databinding.FragmentMapsBinding
 import org.osmdroid.api.IMapController
-import org.osmdroid.config.Configuration
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 

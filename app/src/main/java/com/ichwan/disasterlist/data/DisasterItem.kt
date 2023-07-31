@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.disasters
+package com.ichwan.disasterlist.data
 
 import com.google.gson.annotations.SerializedName
 

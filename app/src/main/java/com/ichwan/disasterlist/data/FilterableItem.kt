@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.filterables
+package com.ichwan.disasterlist.data
 
 data class FilterableItem(
     var name: String,

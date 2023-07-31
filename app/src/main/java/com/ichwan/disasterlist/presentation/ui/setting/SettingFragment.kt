@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.settings
+package com.ichwan.disasterlist.presentation.ui.setting
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,6 +11,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
 import com.ichwan.disasterlist.R
 import com.ichwan.disasterlist.databinding.FragmentSettingBinding
+import com.ichwan.disasterlist.di.SetDataStore
+import com.ichwan.disasterlist.di.SetViewModel
 import kotlinx.coroutines.launch
 
 class SettingFragment : Fragment() {

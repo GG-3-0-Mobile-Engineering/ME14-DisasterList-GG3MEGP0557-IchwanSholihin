@@ -1,5 +1,6 @@
-package com.ichwan.disasterlist.disasters
+package com.ichwan.disasterlist.di
 
+import com.ichwan.disasterlist.data.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

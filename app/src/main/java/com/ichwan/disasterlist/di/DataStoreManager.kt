@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.settings
+package com.ichwan.disasterlist.di
 
 import android.app.Application
 import android.content.Context

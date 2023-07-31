@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist.disasters
+package com.ichwan.disasterlist.presentation.ui.disaster
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.ichwan.disasterlist.R
+import com.ichwan.disasterlist.data.Geometries
 import com.ichwan.disasterlist.databinding.ItemListBinding
 
 class DisasterAdapter(var context: Context, var list: ArrayList<Geometries>) : RecyclerView.Adapter<DisasterAdapter.DisasterHolder>() {

@@ -14,17 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ModalBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
-
-    </style>
-
-    <style name="ModalBottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
-        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
-    </style>
     <!-- Base application theme. -->
-    <style name="Base.Theme.DisasterList" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-    </style>
 
 </resources>

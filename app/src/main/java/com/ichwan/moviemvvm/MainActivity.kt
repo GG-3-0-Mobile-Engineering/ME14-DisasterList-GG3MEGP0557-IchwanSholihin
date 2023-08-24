@@ -1,8 +1,8 @@
-package com.ichwan.disasterlist
+package com.ichwan.moviemvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ichwan.disasterlist.databinding.ActivityMainBinding
+import com.ichwan.moviemvvm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

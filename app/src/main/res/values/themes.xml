@@ -14,13 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ModalBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
-
-    </style>
     <!-- Base application theme. -->
-    <style name="Base.Theme.DisasterList" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
 
 </resources>

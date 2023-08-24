@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist
+package com.ichwan.moviemvvm
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.ichwan.disasterlist
+package com.ichwan.moviemvvm
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
